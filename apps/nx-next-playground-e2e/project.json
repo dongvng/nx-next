@@ -1,0 +1,28 @@
+{
+  "root": "apps/nx-next-playground-e2e",
+  "sourceRoot": "apps/nx-next-playground-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/nx-next-playground-e2e/cypress.json",
+        "devServerTarget": "nx-next-playground:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "nx-next-playground:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/nx-next-playground-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["nx-next-playground"]
+}

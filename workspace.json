@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "nx-next-playground": "apps/nx-next-playground",
+    "nx-next-playground-e2e": "apps/nx-next-playground-e2e"
+  }
+}
