@@ -1,7 +1,9 @@
 {
   "version": 2,
   "projects": {
+    "array": "libs/array",
     "nx-next-playground": "apps/nx-next-playground",
-    "nx-next-playground-e2e": "apps/nx-next-playground-e2e"
+    "nx-next-playground-e2e": "apps/nx-next-playground-e2e",
+    "utils": "libs/utils"
   }
 }

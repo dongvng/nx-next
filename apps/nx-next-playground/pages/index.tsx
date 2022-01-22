@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { Utils, Header } from '@nx-next/utils';
 
 const StyledPage = styled.div`
   .page {
@@ -11,17 +12,19 @@ export function Index() {
    *
    * Note: The corresponding styles are in the ./index.@emotion/styled file.
    */
+
   return (
     <StyledPage>
       <div className="wrapper">
         <div className="container">
           <div id="welcome">
             <h1>
-              <span> Hello there, </span>
+              <span className="text-red-500"> Hello there, </span>
               Welcome nx-next-playground 👋
             </h1>
           </div>
-
+          <Header style={{ color: 'red' }} />
+          <Utils />
           <div id="hero" className="rounded">
             <div className="text-container">
               <h2>
